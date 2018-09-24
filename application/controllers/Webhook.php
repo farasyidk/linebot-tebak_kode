@@ -46,7 +46,6 @@ class Webhook extends CI_Controller {
 
     if(is_array($this->events['events'])){
       foreach ($this->events['events'] as $event){
-        foreach ($this->events['events'] as $event){
  
           // skip group and room event
           if(! isset($event['source']['userId'])) continue;
@@ -69,7 +68,6 @@ class Webhook extends CI_Controller {
             }
           }
    
-        }
       }
     }
 
